@@ -1,0 +1,22 @@
+{
+  "name": "dropmark video loop",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This is an example to embed scripts to all web pages",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "embeded-script.js"
+  ],
+  "permissions": [
+    "<all_urls>"
+  ]
+}
